@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.2.1-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.2.2-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -33,15 +33,16 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.2.1
+## Novidades da 1.2.2
 
 #### Melhorias
-- A licença é reconferida online uma vez por dia (antes, uma vez por semana). Sem internet, o Notchbar continua funcionando normalmente por até 44 dias.
+- Quando o servidor de licenças não reconhece a key, o Notchbar agora diz isso (“Key não reconhecida pelo servidor”) em vez de pedir para conectar à internet.
+- **Remover licença deste Mac** passa a liberar a vaga no servidor também quando a licença estava aguardando confirmação online.
 
 #### Notas
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.1.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -118,7 +119,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.2.1** **(atual)** | 15/10/2026 | [Notchbar-1.2.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.1.dmg) | [v1.2.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.1.md) | `2401340eaa33…` |
+| **1.2.2** **(atual)** | 15/10/2026 | [Notchbar-1.2.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.2.dmg) | [v1.2.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) | `7c746af721d3…` |
+| **1.2.1** | 15/10/2026 | [Notchbar-1.2.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.1.dmg) | [v1.2.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.1.md) | `2401340eaa33…` |
 | **1.2.0** | 15/10/2026 | [Notchbar-1.2.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.0.dmg) | [v1.2.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.0.md) | `0ca48df14b0e…` |
 <!-- VERSIONS:END -->
 
