@@ -6,7 +6,8 @@
 
 <p align="center">
   <b>Seu notch, vivo.</b><br>
-  A música do Mac a um passar de mouse — Spotify, Música, YouTube no navegador, qualquer app.
+  A música do Mac a um passar de mouse — e o HUD do Mac no lugar do quadrado cinza.<br>
+  Spotify, Música, YouTube no navegador, qualquer app · letra sincronizada · volume, brilho, bateria, AirPods e Foco.
 </p>
 
 <p align="center">
@@ -19,7 +20,7 @@
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
-  <img alt="Sem permissões" src="https://img.shields.io/badge/permissões-nenhuma-17161A?style=flat-square">
+  <img alt="Permissões opcionais" src="https://img.shields.io/badge/permissões-opcionais-17161A?style=flat-square">
 </p>
 
 <p align="center">
@@ -66,11 +67,13 @@ Mídia completa — e o notch vira o HUD do Mac.
 
 ## Escondido no notch. Vivo quando você precisa.
 
-O Notchbar mora no notch do MacBook e não ocupa nada da tela. **Passe o mouse** e ele reage com uma expandidinha. **Clique** e uma bandeja desliza por trás do notch com a capa, o nome da música, o artista, a barra de progresso e os controles.
+O Notchbar mora no notch do MacBook e não ocupa nada da tela. **Passe o mouse** e ele reage com uma expandidinha. **Clique** e uma bandeja desliza por trás do notch com a capa, o nome da música, o artista, a barra de progresso e os controles — tingida com a cor da capa.
 
 ## Dynamic Island no Mac
 
 Tocou algo? Com o notch fechado, a **capa aparece à esquerda** e um **equalizador à direita**, na cor do álbum. Pausou, e alguns segundos depois tudo volta a sumir no notch.
+
+O notch fechado também avisa o que acontece no Mac — volume, brilho, carregador, fones conectados, Modo Foco — e some de novo sozinho.
 
 ## Tudo o que toca no Mac
 
@@ -78,7 +81,8 @@ Tocou algo? Com o notch fechado, a **capa aparece à esquerda** e um **equalizad
 |---|---|
 | **Spotify, Música, Podcasts** | capa, título, artista, álbum |
 | **Chrome, Safari, Arc, Edge, Firefox** | YouTube, SoundCloud, Deezer web, cursos, podcasts no navegador |
-| **Controles** | −10 s · anterior · play/pause · próxima · +10 s · arraste a barra para pular |
+| **Controles** | −10 s · anterior · play/pause · próxima · +10 s · arraste a barra para pular · volume |
+| **Abas da bandeja** | **Player** · **Letra** · **Fila** |
 
 Se aparece na Central de Controle do macOS, aparece no Notchbar.
 
@@ -90,9 +94,52 @@ Se aparece na Central de Controle do macOS, aparece no Notchbar.
   <img src="assets/controls.png" width="760" alt="Bandeja aberta com um vídeo do YouTube no Chrome: botões −10 s, faixa anterior, play/pause, próxima faixa e +10 s">
 </p>
 
+## Letra sincronizada
+
+Aba **Letra** na bandeja: a linha que está tocando fica em destaque e a letra rola no tempo da música. **Clique numa linha** para pular até ela. Sem letra sincronizada para a faixa, aparece a letra simples.
+
+As letras vêm do [LRCLIB](https://lrclib.net) (grátis, sem conta) e ficam em cache no seu Mac. Só artista, título, álbum e duração saem do Mac — e dá para desligar em Configurações › Mídia.
+
+## Volume, fila e fonte
+
+- **Volume na bandeja:** a barrinha embaixo dos controles mexe no volume do **Spotify** ou do **Música** quando é um deles que toca; senão, no volume do **Mac**.
+- **Fila (aba Fila):** no **Música**, as próximas 5 faixas da playlist (clique para tocar) e **♥ curtir**. No **Spotify**, **aleatório** e **repetir** — o Spotify não deixa outros apps verem a fila nem salvar músicas.
+- **Fonte:** no canto da bandeja, escolha **Automática** (o que o Mac toca), **Spotify** ou **Música**. Resolve o caso do vídeo no navegador “roubando” o lugar da sua música.
+
+Volume do app, fila, curtir, aleatório/repetir e fonte fixa usam a permissão de **Automação** do macOS (pedida na primeira vez, explicada na hora). Sem ela, o resto funciona igual.
+
+## Gestos e atalhos
+
+| Gesto | O que faz |
+|---|---|
+| Scroll **horizontal** sobre o notch | avança / volta 5 s |
+| Scroll **vertical** sobre o notch | volume do Mac |
+| **Duplo clique** na capa | próxima faixa |
+| Duplo clique no notch fechado (opcional) | próxima faixa |
+
+**Atalhos globais** (opcionais, em Configurações › Mídia), sem nenhuma permissão:
+
+| Atalho | Ação |
+|---|---|
+| ⌃⌥Space | tocar / pausar |
+| ⌃⌥] · ⌃⌥[ | próxima · anterior |
+| ⌃⌥→ · ⌃⌥← | +10 s · −10 s |
+| ⌃⌥N | abre / fecha a bandeja |
+
+## O notch vira o HUD do Mac
+
+| | O que aparece no notch | Padrão |
+|---|---|---|
+| **Volume e brilho** | barrinha elegante no notch, no lugar do quadrado cinza do macOS | desligado (pede **Acessibilidade**) |
+| **Bateria** | ao ligar/tirar o carregador: % e tempo até encher ou restante; avisos em **20%** e **10%** | ligado |
+| **Bluetooth** | “AirPods Pro conectados · 87%” ao conectar fones e acessórios (a bateria, quando o macOS publica) | ligado |
+| **Modo Foco** | o nome e o ícone do Foco ativo, com o notch fechado e nada tocando | ligado |
+
+Tudo liga e desliga em Configurações › **Sistema**. No HUD, play/pause e a luz do teclado continuam com o macOS; o brilho vale para a tela do Mac. Se algo falhar (uma saída de som sem volume, por exemplo), a tecla volta para o macOS — o Notchbar nunca “engole” uma tecla sem fazer o que ela pede.
+
 ## Nada atrás do notch
 
-Nenhum botão, texto ou capa fica escondido atrás da câmera: tudo vive dos lados e abaixo do notch. As configurações ficam no canto superior esquerdo da bandeja aberta.
+Nenhum botão, texto ou capa fica escondido atrás da câmera: tudo vive dos lados e abaixo do notch. As configurações ficam no canto superior esquerdo da bandeja aberta — abas **Geral**, **Mídia**, **Sistema**, **Licença** e **Sobre**.
 
 Em monitor externo ou num Mac sem notch, aparece um notch virtual (dá para desligar).
 
@@ -127,9 +174,16 @@ A key chega no e-mail da compra. No Notchbar: abra a bandeja › ícone de ampul
 
 ## Privacidade
 
-- **Nenhuma permissão:** nem Acessibilidade, nem Gravação de Tela, nem Automação.
-- Lê o mesmo “Tocando agora” da Central de Controle, **só no seu Mac**.
-- Nada de conta nem analytics. Rede: a checagem diária de atualização (um arquivo estático neste repositório) e a confirmação da licença — só a key, um código do Mac (hash), o nome do Mac e a versão do app.
+- **Sem nenhuma permissão, o Notchbar já funciona:** player, ±10 s, letras, gestos, atalhos, bateria e Foco. Ele lê o mesmo “Tocando agora” da Central de Controle, **só no seu Mac**.
+- **Permissões opcionais**, pedidas só quando você liga o recurso e explicadas na hora:
+
+| Permissão | Para quê | Sem ela |
+|---|---|---|
+| **Automação** (Spotify/Música) | volume do app, fila, curtir, aleatório/repetir, fonte fixa | volume do Mac e o resto do player |
+| **Acessibilidade** | HUD de volume e brilho no notch (única forma de pegar as teclas antes do macOS) | o quadrado cinza do macOS continua |
+| **Bluetooth** (o macOS pode perguntar) | aviso de fones/acessórios conectados e a bateria deles | sem o aviso de Bluetooth |
+
+- Nada de conta nem analytics. Rede: a checagem diária de atualização (um arquivo estático neste repositório), a confirmação da licença (só a key, um código do Mac — um hash —, o nome do Mac e a versão do app) e, com as letras ligadas, a busca no LRCLIB (artista, título, álbum e duração).
 
 ## Todas as versões
 
@@ -165,11 +219,37 @@ A bandeja passa a mostrar só “Ativar licença” e “Comprar”. Cole a key 
 </details>
 
 <details>
+<summary><b>Por que o Notchbar pede Automação ou Acessibilidade?</b></summary>
+<br>
+Só se você ligar os recursos que precisam delas. <b>Automação</b> é como o macOS deixa um app conversar com o Spotify e o Música (volume do app, fila, curtir). <b>Acessibilidade</b> é a única forma de pegar as teclas de volume e brilho antes do macOS, para o HUD aparecer no notch. Sem elas, todo o resto funciona.
+</details>
+
+<details>
+<summary><b>A letra não aparece. Por quê?</b></summary>
+<br>
+A letra vem do LRCLIB, um acervo aberto: nem toda faixa está lá (podcasts e vídeos quase nunca). Precisa de internet na primeira vez que a faixa toca; depois fica em cache. Confira também se as letras estão ligadas em Configurações › Mídia.
+</details>
+
+<details>
+<summary><b>Dá para ver a fila do Spotify?</b></summary>
+<br>
+Não: o Spotify não mostra a fila nem deixa salvar músicas para outros apps. No Spotify, a aba Fila tem aleatório e repetir; no Música, as próximas 5 faixas e o ♥ curtir.
+</details>
+
+<details>
+<summary><b>O HUD de volume substitui o do macOS?</b></summary>
+<br>
+Sim, se você ligar (Configurações › Sistema) e permitir Acessibilidade. Desligou, o quadrado cinza do macOS volta na hora.
+</details>
+
+<details>
 <summary><b>Em quantos Macs posso usar?</b></summary>
 <br>
 Em até **2 Macs** seus ao mesmo tempo. Trocou de Mac? No antigo: Licença › Remover licença deste Mac — a vaga fica livre para o novo.
 </details>
 
 ---
+
+<p align="center"><sub>Também da BigHeadStudios: <a href="https://github.com/andrecamellini01-ai/BigHeadStudios.Limitbar-releases"><b>Limitbar</b></a> — seus limites do Claude na barra de menu.</sub></p>
 
 <sub>© 2026 BigHeadStudios. Notchbar é independente, sem afiliação com a Apple ou com os apps que controla. Leitura de mídia via <a href="https://github.com/ungive/mediaremote-adapter">mediaremote-adapter</a> (BSD-3-Clause).</sub>
