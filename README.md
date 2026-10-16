@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.4.1-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.5.0-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,16 +34,28 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.4.1
+## Novidades da 1.5.0
 
-#### Melhorias
-- **HUD de volume e brilho:** se a permissão de Acessibilidade chegar depois (ou voltar a valer), o Notchbar passa a usar o HUD sozinho, sem precisar desligar e ligar.
-- Configurações › Sistema ganhou **Abrir Ajustes de Acessibilidade** e a dica para quando o volume continua no quadrado cinza depois de atualizar o app (remover e adicionar o Notchbar de novo na lista).
+Avisos no estilo do iPhone — e tudo mais suave.
+
+#### Avisos
+- **Conexão de AirPods e Bluetooth no estilo iPhone:** o notch abre do tamanho do HUD com o ícone do aparelho, o anel de bateria e “AirPods Pro · Conectado”; depois encolhe para o compacto (ícone e anel dos lados da câmera) e some.
+- **Aparelho sem bateria conhecida:** o anel corre 360° em verde e vira uma bolinha verde com ✓. Sem ícone conhecido, aparecem as 5 primeiras letras do nome (ex.: “LIFT B”).
+- **Bateria e Foco no mesmo formato:** carregador conectado/desconectado e bateria fraca com anel de carga; o Foco abre, mostra o nome e fica no compacto enquanto estiver ligado.
+- Volume e brilho têm prioridade: mexeu, o aviso sai e não volta.
+
+#### Mais suave
+- O notch abre e fecha com uma curva contínua (sem “degraus”), o conteúdo fica sempre dentro da forma e a superfície é desenhada pela GPU.
+- **Volume mais contínuo:** a barra desliza entre os passos; ⌥⇧ + volume/brilho anda de pouquinho em pouquinho (como no macOS); o scroll no notch acompanha o dedo.
+
+#### Correções
+- **Atualizar pelo app voltou a funcionar.** Logo depois de um lançamento, o GitHub ainda entregava o arquivo antigo e a verificação (sha256) falhava. Agora cada versão tem seu próprio link, o app fura o cache e tenta de novo uma vez; o botão Procurar atualizações mostra “Verificando…” enquanto confere.
+- **A permissão de Acessibilidade não se perde mais a cada atualização.** O app passa a ser assinado sempre com a mesma identidade. Depois desta versão, permita a Acessibilidade uma última vez.
 
 #### Notas
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.1.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.0.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -175,7 +187,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.4.1** **(atual)** | 16/10/2026 | [Notchbar-1.4.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.1.dmg) | [v1.4.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.1.md) | `73a4639c8930…` |
+| **1.5.0** **(atual)** | 16/10/2026 | [Notchbar-1.5.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.0.dmg) | [v1.5.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.0.md) | `4db9cfa7af4b…` |
+| **1.4.1** | 16/10/2026 | [Notchbar-1.4.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.1.dmg) | [v1.4.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.1.md) | `73a4639c8930…` |
 | **1.4.0** | 16/10/2026 | [Notchbar-1.4.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.0.dmg) | [v1.4.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.0.md) | `69d54faa9c40…` |
 | **1.3.0** | 16/10/2026 | [Notchbar-1.3.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.3.0.dmg) | [v1.3.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.3.0.md) | `b1d12dda45e9…` |
 | **1.2.2** | 15/10/2026 | [Notchbar-1.2.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.2.dmg) | [v1.2.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) | `7c746af721d3…` |
