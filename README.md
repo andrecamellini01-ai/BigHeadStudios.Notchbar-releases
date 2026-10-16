@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.2.2-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.3.0-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -33,16 +33,35 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.2.2
+## Novidades da 1.3.0
 
-#### Melhorias
-- Quando o servidor de licenças não reconhece a key, o Notchbar agora diz isso (“Key não reconhecida pelo servidor”) em vez de pedir para conectar à internet.
-- **Remover licença deste Mac** passa a liberar a vaga no servidor também quando a licença estava aguardando confirmação online.
+Mídia completa — e o notch vira o HUD do Mac.
+
+#### Mídia
+- **Letras sincronizadas.** Nova aba **Letra** na bandeja: a linha atual em destaque, rolando no tempo da música; clique numa linha para pular até ela. Fonte: LRCLIB (grátis, sem conta), com cache local. Só artista, título, álbum e duração saem do Mac.
+- **Volume na bandeja.** Barrinha de volume embaixo dos controles: do **Spotify/Música** quando é um deles que toca (via Automação), senão o volume do **Mac**.
+- **Fila e extras.** Aba **Fila**: no Música, as próximas 5 faixas do playlist (clique para tocar) e **♥ curtir**; no Spotify, **aleatório** e **repetir** (o Spotify não expõe fila nem “salvar” para outros apps).
+- **Fonte selecionável.** No canto da bandeja, escolha **Automática** (o que o Mac toca), **Spotify** ou **Música** — resolve o YouTube no navegador “roubando” o Now Playing.
+- **Bandeja tingida** com a cor da capa (dá para desligar).
+- **Gestos:** scroll horizontal sobre o notch = avançar/voltar 5 s; scroll vertical = volume do Mac; duplo clique na capa = próxima faixa (e, opcionalmente, duplo clique no notch fechado).
+- **Atalhos globais** (opcionais): ⌃⌥Space tocar/pausar · ⌃⌥] próxima · ⌃⌥[ anterior · ⌃⌥→ +10 s · ⌃⌥← −10 s · ⌃⌥N abre/fecha a bandeja. Sem permissão especial.
+
+#### Sistema (novo)
+- **HUD de volume e brilho no notch**, no lugar do quadrado cinza do macOS. Opcional; exige **Acessibilidade** (é a única forma de interceptar as teclas antes do sistema). Play/pause e luz do teclado continuam com o macOS.
+- **Bateria:** ao conectar/desconectar o carregador, o notch mostra % e tempo até cheia/restante; avisos em **20%** e **10%**.
+- **Bluetooth:** “AirPods Pro conectados · 87%” ao conectar fones e acessórios (bateria quando o macOS publica).
+- **Modo Foco** ativo aparece no notch fechado quando nada está tocando (nome e ícone do seu Foco).
+- Nova aba **Sistema** nas Configurações para ligar/desligar cada um; aba **Mídia** para fonte, letras, gestos, atalhos e Automação.
+
+#### Permissões (todas opcionais e explicadas na hora)
+- **Automação** (Spotify/Música): só para volume do app, fila, curtir, aleatório/repetir e fonte explícita.
+- **Acessibilidade**: só para o HUD de volume/brilho.
+- Nada de conta ou telemetria. Bateria, Bluetooth e Foco são lidos localmente.
 
 #### Notas
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.3.0.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -119,7 +138,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.2.2** **(atual)** | 15/10/2026 | [Notchbar-1.2.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.2.dmg) | [v1.2.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) | `7c746af721d3…` |
+| **1.3.0** **(atual)** | 16/10/2026 | [Notchbar-1.3.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.3.0.dmg) | [v1.3.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.3.0.md) | `b1d12dda45e9…` |
+| **1.2.2** | 15/10/2026 | [Notchbar-1.2.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.2.dmg) | [v1.2.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) | `7c746af721d3…` |
 | **1.2.1** | 15/10/2026 | [Notchbar-1.2.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.1.dmg) | [v1.2.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.1.md) | `2401340eaa33…` |
 | **1.2.0** | 15/10/2026 | [Notchbar-1.2.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.0.dmg) | [v1.2.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.0.md) | `0ca48df14b0e…` |
 <!-- VERSIONS:END -->
