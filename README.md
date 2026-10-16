@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.4.0-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.4.1-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,26 +34,16 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.4.0
+## Novidades da 1.4.1
 
-HUD novo de volume e brilho — e o notch em todas as telas.
-
-#### HUD de volume e brilho
-- **Visual novo**, no notch: corpo preto colado no topo da tela, ícone à esquerda da câmera, percentual à direita e a barra embaixo, com degradê, brilho suave e reflexo.
-- **4 cores** — Azul, Verde, Amarelo e Vermelho —, uma para o volume e outra para o brilho (Configurações › Sistema › Cores do HUD). A cor não muda com o nível.
-- **Arraste a barra** para ajustar o volume ou o brilho; com o mouse em cima, o HUD fica na tela e mostra o puxador.
-- **Catálogo de cores** para comparar todas as combinações (Configurações › Sistema › Ver catálogo de cores…).
-
-#### Telas
-- **Escolha onde o notch aparece:** só na principal, só na secundária ou em todas as telas. Em todas, a música, o HUD e os avisos aparecem em cada tela ao mesmo tempo — ótimo com a tampa fechada e dois monitores.
-- **Notch minimizado** em telas sem notch: parado, fica só um sinalzinho no topo; cresce ao passar o mouse, com música tocando ou com um aviso.
-- ⌃⌥N abre a bandeja da tela onde está o mouse.
+#### Melhorias
+- **HUD de volume e brilho:** se a permissão de Acessibilidade chegar depois (ou voltar a valer), o Notchbar passa a usar o HUD sozinho, sem precisar desligar e ligar.
+- Configurações › Sistema ganhou **Abrir Ajustes de Acessibilidade** e a dica para quando o volume continua no quadrado cinza depois de atualizar o app (remover e adicionar o Notchbar de novo na lista).
 
 #### Notas
-- Ícones do HUD: Lucide (licença ISC).
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.0.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.1.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -185,7 +175,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.4.0** **(atual)** | 16/10/2026 | [Notchbar-1.4.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.0.dmg) | [v1.4.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.0.md) | `69d54faa9c40…` |
+| **1.4.1** **(atual)** | 16/10/2026 | [Notchbar-1.4.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.1.dmg) | [v1.4.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.1.md) | `73a4639c8930…` |
+| **1.4.0** | 16/10/2026 | [Notchbar-1.4.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.0.dmg) | [v1.4.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.0.md) | `69d54faa9c40…` |
 | **1.3.0** | 16/10/2026 | [Notchbar-1.3.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.3.0.dmg) | [v1.3.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.3.0.md) | `b1d12dda45e9…` |
 | **1.2.2** | 15/10/2026 | [Notchbar-1.2.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.2.dmg) | [v1.2.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.2.md) | `7c746af721d3…` |
 | **1.2.1** | 15/10/2026 | [Notchbar-1.2.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.2.1.dmg) | [v1.2.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.2.1.md) | `2401340eaa33…` |
