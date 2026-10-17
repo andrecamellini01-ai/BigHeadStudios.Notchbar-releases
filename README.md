@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.5.1-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.6.0-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,15 +34,20 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.5.1
+## Novidades da 1.6.0
 
-#### Correções
-- **Tempo do player numa linha só:** em faixas longas (podcasts, vídeos de mais de 1 hora) o tempo restante quebrava em duas linhas (“-2:30:3 / 3”). Os tempos agora se ajustam à duração da faixa e a barra não pula quando os números mudam.
+Limpe o teclado sem medo.
+
+#### Novidades
+- **Limpeza do teclado.** Novo ícone de teclado na bandeja, ao lado da engrenagem (ou **⌃⌥K**): trava todas as teclas — letras, atalhos, teclas de função, volume e brilho — para você passar o pano sem disparar nada. O mouse continua funcionando.
+- O notch mostra **“Limpando o teclado”** com a contagem regressiva; clique nele para abrir a bandeja com **Destravar** e **+30 s**.
+- Destrava sozinho ao zerar o tempo (30 s, 1, 2 ou 5 min — Configurações › Sistema › Limpar teclado), pelo botão, ou **segurando Esc por 2 s**. Se o Notchbar fechar, o teclado volta na hora.
+- Usa a mesma permissão de **Acessibilidade** do HUD de volume/brilho; sem ela, o app pede uma vez.
 
 #### Notas
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.1.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.6.0.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -174,7 +179,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.5.1** **(atual)** | 16/10/2026 | [Notchbar-1.5.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.1.dmg) | [v1.5.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.1.md) | `975a458e4082…` |
+| **1.6.0** **(atual)** | 17/10/2026 | [Notchbar-1.6.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.6.0.dmg) | [v1.6.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.6.0.md) | `d48fc1e5e97e…` |
+| **1.5.1** | 16/10/2026 | [Notchbar-1.5.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.1.dmg) | [v1.5.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.1.md) | `975a458e4082…` |
 | **1.5.0** | 16/10/2026 | [Notchbar-1.5.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.0.dmg) | [v1.5.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.0.md) | `4db9cfa7af4b…` |
 | **1.4.1** | 16/10/2026 | [Notchbar-1.4.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.1.dmg) | [v1.4.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.1.md) | `73a4639c8930…` |
 | **1.4.0** | 16/10/2026 | [Notchbar-1.4.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.4.0.dmg) | [v1.4.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.4.0.md) | `69d54faa9c40…` |
