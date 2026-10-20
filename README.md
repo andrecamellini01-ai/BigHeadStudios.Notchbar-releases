@@ -6,8 +6,8 @@
 
 <p align="center">
   <b>Seu notch, vivo.</b><br>
-  A música do Mac a um passar de mouse — e o HUD do Mac no lugar do quadrado cinza.<br>
-  Spotify, Música, YouTube no navegador, qualquer app · letra sincronizada · volume, brilho, bateria, AirPods e Foco.
+  A música do Mac a um passar de mouse, o HUD do Mac no lugar do quadrado cinza — e a próxima reunião, com botão Entrar.<br>
+  Spotify, Música, YouTube no navegador, qualquer app · letra sincronizada · Google Meet, Zoom e Teams na hora · volume, brilho, bateria, AirPods e Foco.
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.7.0-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.8.0-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,27 +34,43 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.7.0
+## Novidades da 1.8.0
 
-A próxima reunião, no notch.
+A bandeja ganhou uma meia roda.
 
-#### Agenda
-- **Próxima reunião no notch.** Ligue em Configurações › Agenda e escolha os calendários. Na antecedência que você definir (10 min por padrão), o notch mostra um lembrete discreto com a contagem; aos 2 minutos ele abre com o botão **Entrar**, que leva direto ao Google Meet, Zoom ou Teams do evento. Na hora, “Agora” — com × para ignorar só aquela reunião.
-- **Aba Hoje** na bandeja: o dia inteiro, a próxima destacada, Entrar/Abrir/Mapas em cada linha e o atalho para o Calendário.
-- **⌃⌥J** entra na próxima reunião (ou abre Hoje). Com música tocando, a capa fica e o lembrete ocupa o lado direito.
-- **Google direto, se quiser:** Configurações › Agenda › Conectar Google — login na página do Google, sem colocar a conta no macOS. Os calendários do Google aparecem junto com os do Mac.
-- Só leitura, só no seu Mac: nada é criado no calendário, nada é gravado nem enviado. O app pede o acesso ao calendário só quando você liga o módulo.
+#### Bandeja
+- **Meia roda de seções.** Na borda esquerda da bandeja, uma meia roda troca entre **Em branco · Música · Hoje**: recolhida é uma coluna de pontos; passe o mouse por cima e ela entra com os ícones — role (trackpad ou roda do mouse) para girar, ou clique no ícone. Enquanto está aberta, o conteúdo da bandeja recua num fade e a roda vira o destaque. Hoje aparece com a Agenda ligada; Música volta à última aba que você usou.
+- **Reprodução · Letra · Fila** viraram uma pílula no canto superior esquerdo, dentro de Música (só com algo tocando).
+- **Em branco:** uma seção vazia e mais baixa, para quem quer a bandeja só como atalho das configurações.
+- A roda tem sempre o mesmo tamanho e o mesmo lugar — em qualquer notch e em qualquer seção. Trocar para Hoje cresce a bandeja para baixo sem mexer nela; a troca de seção faz crossfade.
+
+#### Hoje
+- **O que já passou recua.** Eventos terminados ficam apagados (42%), com o fundo mais escuro e o Entrar sem preenchimento — e esmaecem na hora em que terminam, se a bandeja estiver aberta. Uma linha **“agora”** (ponto, fio e a hora) separa o passado do que vem, e a lista já abre rolada até ela: o próximo compromisso é a primeira coisa que você vê.
+
+#### Correções
+- A faixa de cima da bandeja cortava ícones no ombro do notch (telas estreitas, ou teste + atualização + abas ao mesmo tempo). Agora ela se ajusta ao espaço em três densidades e fica encostada à esquerda.
 
 #### Notas
-- O aviso usa exatamente o frame e o acabamento do HUD de volume. Volume, brilho e limpeza do teclado têm prioridade sobre ele.
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.7.0.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
 
 O Notchbar mora no notch do MacBook e não ocupa nada da tela. **Passe o mouse** e ele reage com uma expandidinha. **Clique** e uma bandeja desliza por trás do notch com a capa, o nome da música, o artista, a barra de progresso e os controles — tingida com a cor da capa.
+
+## A bandeja: uma meia roda de seções
+
+Na borda esquerda da bandeja mora uma **meia roda**. Recolhida, é só uma coluna de pontos. **Passe o mouse por cima** e ela entra com os ícones das seções; **role** (trackpad ou roda do mouse) para girar, ou clique no ícone. Enquanto ela está aberta, o resto da bandeja recua num fade — a roda é o destaque.
+
+| Seção | O que mostra |
+|---|---|
+| **Em branco** | nada: a bandeja mais baixa, só com os ícones de configuração |
+| **Música** | o player — e, no canto superior esquerdo, a pílula **Reprodução · Letra · Fila** |
+| **Hoje** | a agenda do dia, com a próxima reunião em destaque (aparece com a Agenda ligada) |
+
+A roda tem sempre o mesmo tamanho e o mesmo lugar, em qualquer Mac: trocar de seção cresce ou encolhe a bandeja para baixo, sem mexer nela.
 
 ## Dynamic Island no Mac
 
@@ -69,7 +85,7 @@ O notch fechado também avisa o que acontece no Mac — volume, brilho, carregad
 | **Spotify, Música, Podcasts** | capa, título, artista, álbum |
 | **Chrome, Safari, Arc, Edge, Firefox** | YouTube, SoundCloud, Deezer web, cursos, podcasts no navegador |
 | **Controles** | −10 s · anterior · play/pause · próxima · +10 s · arraste a barra para pular · volume |
-| **Abas da bandeja** | **Player** · **Letra** · **Fila** |
+| **Seção Música** | pílula **Reprodução** · **Letra** · **Fila** no canto superior esquerdo |
 
 Se aparece na Central de Controle do macOS, aparece no Notchbar.
 
@@ -101,6 +117,7 @@ Volume do app, fila, curtir, aleatório/repetir e fonte fixa usam a permissão d
 |---|---|
 | Scroll **horizontal** sobre o notch | avança / volta 5 s |
 | Scroll **vertical** sobre o notch | volume do Mac |
+| Scroll sobre a **meia roda** (mouse em cima dela) | gira entre Em branco · Música · Hoje |
 | **Duplo clique** na capa | próxima faixa |
 | Duplo clique no notch fechado (opcional) | próxima faixa |
 
@@ -112,6 +129,19 @@ Volume do app, fila, curtir, aleatório/repetir e fonte fixa usam a permissão d
 | ⌃⌥] · ⌃⌥[ | próxima · anterior |
 | ⌃⌥→ · ⌃⌥← | +10 s · −10 s |
 | ⌃⌥N | abre / fecha a bandeja |
+| ⌃⌥J | entra na próxima reunião (ou abre Hoje) |
+| ⌃⌥K | limpeza do teclado (trava as teclas por um tempo) |
+
+## A próxima reunião, no notch
+
+Ligue em Configurações › **Agenda** e escolha os calendários. Na antecedência que você definir (10 min por padrão), o notch fechado mostra um **lembrete discreto com a contagem** ao lado da câmera; aos **2 minutos** ele abre com o botão **Entrar**, que leva direto ao **Google Meet, Zoom ou Teams** do evento — o link é lido do próprio convite. Na hora, “Agora”, com × para ignorar só aquela reunião. Com música tocando, a capa fica e o lembrete ocupa o lado direito.
+
+- **Hoje:** a seção da bandeja com o dia inteiro — a próxima destacada, **Entrar / Abrir / Mapas** em cada linha e o atalho para o app Calendário.
+- **⌃⌥J** entra na próxima reunião com link (ou abre Hoje).
+- **Calendários do Mac:** tudo o que está em Contas da Internet (iCloud, Google, Exchange, Outlook…), via a permissão de Calendários — só leitura.
+- **Google direto, se quiser:** Configurações › Agenda › **Conectar Google** — login na página do Google, sem colocar a conta no macOS. Os calendários do Google aparecem junto com os do Mac. (Enquanto o app está em verificação no Google, a conexão é liberada por e-mail de teste; os calendários do Mac funcionam para todo mundo.)
+
+O Notchbar **nunca cria, altera, remove nem responde** eventos. Os eventos ficam só na memória do app, enquanto ele roda; nada é gravado nem enviado. Detalhes em [Privacidade](#privacidade).
 
 ## O notch vira o HUD do Mac
 
@@ -126,7 +156,7 @@ Tudo liga e desliga em Configurações › **Sistema**. No HUD, play/pause e a l
 
 ## Nada atrás do notch
 
-Nenhum botão, texto ou capa fica escondido atrás da câmera: tudo vive dos lados e abaixo do notch. As configurações ficam no canto superior esquerdo da bandeja aberta — abas **Geral**, **Mídia**, **Sistema**, **Licença** e **Sobre**.
+Nenhum botão, texto ou capa fica escondido atrás da câmera: tudo vive dos lados e abaixo do notch. As configurações ficam no canto superior esquerdo da bandeja aberta — abas **Geral**, **Mídia**, **Sistema**, **Agenda**, **Licença** e **Sobre**.
 
 Em monitor externo ou num Mac sem notch, aparece um notch virtual — completo ou **minimizado** (só um sinalzinho que cresce ao passar o mouse); dá para desligar.
 
@@ -171,8 +201,10 @@ A key chega no e-mail da compra. No Notchbar: abra a bandeja › ícone de ampul
 | **Automação** (Spotify/Música) | volume do app, fila, curtir, aleatório/repetir, fonte fixa | volume do Mac e o resto do player |
 | **Acessibilidade** | HUD de volume e brilho no notch (única forma de pegar as teclas antes do macOS) | o quadrado cinza do macOS continua |
 | **Bluetooth** (o macOS pode perguntar) | aviso de fones/acessórios conectados e a bateria deles | sem o aviso de Bluetooth |
+| **Calendários** (acesso total — o único que o macOS 14+ oferece para ler eventos) | lembrete da próxima reunião, Entrar e a seção Hoje; **só leitura** | sem a Agenda (ou só com o Google direto) |
+| **Google** (login na página do Google, opcional) | ler os seus calendários do Google sem passar pelo macOS; **só leitura**, token no Keychain, Desconectar revoga | os calendários do Mac continuam |
 
-- Nada de conta nem analytics. Rede: a checagem diária de atualização (um arquivo estático neste repositório), a confirmação da licença (só a key, um código do Mac — um hash —, o nome do Mac e a versão do app) e, com as letras ligadas, a busca no LRCLIB (artista, título, álbum e duração).
+- Nada de conta nem analytics. Rede: a checagem diária de atualização (um arquivo estático neste repositório), a confirmação da licença (só a key, um código do Mac — um hash —, o nome do Mac e a versão do app), com as letras ligadas a busca no LRCLIB (artista, título, álbum e duração) e, se você conectar o Google, as leituras do Google Agenda em seu nome — nada disso passa pela BigHeadStudios. Política completa: [privacidade](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/PRIVACY.md).
 
 ## Todas as versões
 
@@ -181,7 +213,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.7.0** **(atual)** | 20/10/2026 | [Notchbar-1.7.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.7.0.dmg) | [v1.7.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.7.0.md) | `5194af730925…` |
+| **1.8.0** **(atual)** | 20/10/2026 | [Notchbar-1.8.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.0.dmg) | [v1.8.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) | `51ce1253c5d7…` |
+| **1.7.0** | 20/10/2026 | [Notchbar-1.7.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.7.0.dmg) | [v1.7.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.7.0.md) | `5194af730925…` |
 | **1.6.0** | 17/10/2026 | [Notchbar-1.6.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.6.0.dmg) | [v1.6.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.6.0.md) | `d48fc1e5e97e…` |
 | **1.5.1** | 16/10/2026 | [Notchbar-1.5.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.1.dmg) | [v1.5.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.1.md) | `975a458e4082…` |
 | **1.5.0** | 16/10/2026 | [Notchbar-1.5.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.0.dmg) | [v1.5.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.0.md) | `4db9cfa7af4b…` |
@@ -235,6 +268,18 @@ Não: o Spotify não mostra a fila nem deixa salvar músicas para outros apps. N
 <summary><b>O HUD de volume substitui o do macOS?</b></summary>
 <br>
 Sim, se você ligar (Configurações › Sistema) e permitir Acessibilidade. Desligou, o quadrado cinza do macOS volta na hora.
+</details>
+
+<details>
+<summary><b>Meus calendários do Google não aparecem.</b></summary>
+<br>
+Dois caminhos. Se a conta do Google está em Ajustes do Sistema › Contas da Internet com Calendários ligado, ela aparece na lista do Mac (Configurações › Agenda). Se não quer colocar a conta no macOS, use <b>Conectar Google</b> na mesma aba: login na página do Google, só leitura. Enquanto o app está em verificação no Google, esse caminho é liberado por e-mail de teste — peça o seu no suporte.
+</details>
+
+<details>
+<summary><b>O Notchbar mexe no meu calendário?</b></summary>
+<br>
+Não. Ele só lê: nunca cria, altera, remove nem responde convites. Os eventos ficam na memória do app enquanto ele roda; nada é gravado nem enviado.
 </details>
 
 <details>
