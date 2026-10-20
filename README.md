@@ -72,6 +72,10 @@ Na borda esquerda da bandeja mora uma **meia roda**. Recolhida, é só uma colun
 
 A roda tem sempre o mesmo tamanho e o mesmo lugar, em qualquer Mac: trocar de seção cresce ou encolhe a bandeja para baixo, sem mexer nela.
 
+<p align="center">
+  <img src="assets/dial.png" width="640" alt="Bandeja aberta com a meia roda de seções à esquerda: Em branco, Música (selecionada) e Hoje; o player recua num fade">
+</p>
+
 ## Dynamic Island no Mac
 
 Tocou algo? Com o notch fechado, a **capa aparece à esquerda** e um **equalizador à direita**, na cor do álbum. Pausou, e alguns segundos depois tudo volta a sumir no notch.
@@ -136,7 +140,16 @@ Volume do app, fila, curtir, aleatório/repetir e fonte fixa usam a permissão d
 
 Ligue em Configurações › **Agenda** e escolha os calendários. Na antecedência que você definir (10 min por padrão), o notch fechado mostra um **lembrete discreto com a contagem** ao lado da câmera; aos **2 minutos** ele abre com o botão **Entrar**, que leva direto ao **Google Meet, Zoom ou Teams** do evento — o link é lido do próprio convite. Na hora, “Agora”, com × para ignorar só aquela reunião. Com música tocando, a capa fica e o lembrete ocupa o lado direito.
 
-- **Hoje:** a seção da bandeja com o dia inteiro — a próxima destacada, **Entrar / Abrir / Mapas** em cada linha e o atalho para o app Calendário.
+<p align="center">
+  <img src="assets/agenda.png" width="880" alt="Os três momentos do lembrete: 10 min antes (contagem ao lado da câmera), 2 min antes (cartão com Entrar) e na hora (Agora, com × para ignorar)">
+</p>
+
+- **Hoje:** a seção da bandeja com o dia inteiro — o que já passou recua, uma linha **“agora”** separa o passado do que vem (a lista abre rolada até ela), a próxima fica destacada, com **Entrar / Abrir / Mapas** em cada linha e o atalho para o app Calendário.
+
+<p align="center">
+  <img src="assets/today.png" width="640" alt="Seção Hoje: dois eventos terminados apagados, a linha agora às 09:52 e a próxima reunião destacada com o botão Entrar">
+</p>
+
 - **⌃⌥J** entra na próxima reunião com link (ou abre Hoje).
 - **Calendários do Mac:** tudo o que está em Contas da Internet (iCloud, Google, Exchange, Outlook…), via a permissão de Calendários — só leitura.
 - **Google direto, se quiser:** Configurações › Agenda › **Conectar Google** — login na página do Google, sem colocar a conta no macOS. Os calendários do Google aparecem junto com os do Mac. (Enquanto o app está em verificação no Google, a conexão é liberada por e-mail de teste; os calendários do Mac funcionam para todo mundo.)
