@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.8.0-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.8.1-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,26 +34,18 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.8.0
+## Novidades da 1.8.1
 
-A bandeja ganhou uma meia roda.
+Agora, só por um instante.
 
-#### Bandeja
-- **Meia roda de seções.** Na borda esquerda da bandeja, uma meia roda troca entre **Em branco · Música · Hoje**: recolhida é uma coluna de pontos; passe o mouse por cima e ela entra com os ícones — role (trackpad ou roda do mouse) para girar, ou clique no ícone. Enquanto está aberta, o conteúdo da bandeja recua num fade e a roda vira o destaque. Hoje aparece com a Agenda ligada; Música volta à última aba que você usou.
-- **Reprodução · Letra · Fila** viraram uma pílula no canto superior esquerdo, dentro de Música (só com algo tocando).
-- **Em branco:** uma seção vazia e mais baixa, para quem quer a bandeja só como atalho das configurações.
-- A roda tem sempre o mesmo tamanho e o mesmo lugar — em qualquer notch e em qualquer seção. Trocar para Hoje cresce a bandeja para baixo sem mexer nela; a troca de seção faz crossfade.
-
-#### Hoje
-- **O que já passou recua.** Eventos terminados ficam apagados (42%), com o fundo mais escuro e o Entrar sem preenchimento — e esmaecem na hora em que terminam, se a bandeja estiver aberta. Uma linha **“agora”** (ponto, fio e a hora) separa o passado do que vem, e a lista já abre rolada até ela: o próximo compromisso é a primeira coisa que você vê.
-
-#### Correções
-- A faixa de cima da bandeja cortava ícones no ombro do notch (telas estreitas, ou teste + atualização + abas ao mesmo tempo). Agora ela se ajusta ao espaço em três densidades e fica encostada à esquerda.
+#### Agenda
+- **“Agora” não fica a reunião inteira.** Depois do início, o lembrete compacto fica 5 minutos e sai; o notch fica quieto até a reunião acabar (a seção Hoje continua mostrando “agora · até …”). Acordar no meio de uma reunião ainda recebe a recuperação com Entrar, uma vez, que some sozinha.
+- **A roda tira o aviso.** Com um lembrete na tela, girar a meia roda para Em branco ou Música o recolhe — sem marcar a reunião como ignorada. Girar de volta para Hoje, ele volta.
 
 #### Notas
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -226,7 +218,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.8.0** **(atual)** | 20/10/2026 | [Notchbar-1.8.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.0.dmg) | [v1.8.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) | `51ce1253c5d7…` |
+| **1.8.1** **(atual)** | 20/10/2026 | [Notchbar-1.8.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.1.dmg) | [v1.8.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) | `6a17a2c33df6…` |
+| **1.8.0** | 20/10/2026 | [Notchbar-1.8.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.0.dmg) | [v1.8.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) | `51ce1253c5d7…` |
 | **1.7.0** | 20/10/2026 | [Notchbar-1.7.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.7.0.dmg) | [v1.7.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.7.0.md) | `5194af730925…` |
 | **1.6.0** | 17/10/2026 | [Notchbar-1.6.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.6.0.dmg) | [v1.6.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.6.0.md) | `d48fc1e5e97e…` |
 | **1.5.1** | 16/10/2026 | [Notchbar-1.5.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.5.1.dmg) | [v1.5.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.5.1.md) | `975a458e4082…` |
