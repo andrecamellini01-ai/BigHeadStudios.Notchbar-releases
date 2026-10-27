@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.8.1-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.9.0-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,18 +34,40 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.8.1
+## Novidades da 1.9.0
 
-Agora, só por um instante.
+O notch ficou físico, vivo e de vidro.
 
-#### Agenda
-- **“Agora” não fica a reunião inteira.** Depois do início, o lembrete compacto fica 5 minutos e sai; o notch fica quieto até a reunião acabar (a seção Hoje continua mostrando “agora · até …”). Acordar no meio de uma reunião ainda recebe a recuperação com Entrar, uma vez, que some sozinha.
-- **A roda tira o aviso.** Com um lembrete na tela, girar a meia roda para Em branco ou Música o recolhe — sem marcar a reunião como ignorada. Girar de volta para Hoje, ele volta.
+#### Aurora
+- **Fundo vivo com as cores da capa.** A bandeja aberta tira três cores da capa e as transforma em luzes grandes e suaves que derivam devagar por baixo do player — como a tela de letras do Apple Music. A faixa da câmera continua preta (o notch físico some nela); com a música pausada, a luz para; trocou de faixa, as luzes novas entram num crossfade. Liga e desliga em Configurações › Mídia › Visual.
+- **A capa respira com a música.** Tocando, a capa fica grande, com sombra funda; pausada, ela recua — o mesmo gesto do Apple Music.
+
+#### Movimento e forma
+- **A forma é física.** A bandeja abre com uma mola que passa um nadinha do ponto e assenta, fecha firme e sem quique; a espiadinha dá um pulinho. HUD, avisos e Agenda seguem a coreografia de sempre.
+- **O conteúdo materializa.** Ao abrir, ícones e corpo saem de um desfoque, crescendo de 95,5% para 100%, escalonados (faixa de cima, depois o corpo); ao fechar, somem antes de a forma recolher.
+- **Cantos contínuos.** O notch, a espiadinha e a bandeja ganharam cantos de curvatura contínua (o “squircle” do hardware da Apple) no lugar do arco simples.
+
+#### Vidro
+- **Controles de vidro.** Botões ganham um disco de vidro e “levantam” ao passar o mouse; a pílula Reprodução · Letra · Fila virou um segmentado de vidro com o polegar deslizando até a aba; botões secundários, linhas do Hoje e a Prateleira usam o mesmo vidro (brilho de cima, aro que pega luz). A barra de progresso engrossa com o mouse em cima.
+- Horários em SF Rounded com dígitos de largura fixa.
+
+#### Letras como no Apple Music
+- Todas as linhas em negrito no mesmo corpo: a atual nítida e branca, as outras recuam com desfoque e transparência pela distância; a rolagem segue com mola.
+- **Pausas instrumentais** viram três pontos que enchem um a um no tempo da pausa, respirando — e somem pouco antes da próxima linha. Uma introdução longa também ganha os pontos.
+
+#### Prateleira
+- **Arraste arquivos até o notch.** Quando um arquivo chega perto, o notch “inspira”: cresce, mostra “Solte para guardar” e acende um aro colorido girando por dentro da borda. Em cima dele, a bandeja abre direto na nova seção **Prateleira** da meia roda.
+- Os arquivos ficam em blocos de vidro (com miniatura, nas imagens): arraste de volta para qualquer app — vai o arquivo original —, duplo clique abre, × tira; ao lado, **AirDrop**, **Mostrar no Finder** e **Limpar**. A Prateleira guarda só onde os arquivos estão (até 24) e esquece os que sumirem.
+- Liga e desliga em Configurações › Geral › Notch.
+
+#### Correções
+- Rolar a lista do Hoje, a letra, a fila ou a Prateleira não mexe mais no volume nem na posição da música.
 
 #### Notas
+- Sem permissão nova: a Prateleira lê só o que você solta nela.
 - Licença vitalícia cobre toda a série 1.x.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -218,7 +240,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.8.1** **(atual)** | 20/10/2026 | [Notchbar-1.8.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.1.dmg) | [v1.8.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) | `6a17a2c33df6…` |
+| **1.9.0** **(atual)** | 27/10/2026 | [Notchbar-1.9.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.9.0.dmg) | [v1.9.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) | `3ed52de00023…` |
+| **1.8.1** | 20/10/2026 | [Notchbar-1.8.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.1.dmg) | [v1.8.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) | `6a17a2c33df6…` |
 | **1.8.0** | 20/10/2026 | [Notchbar-1.8.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.0.dmg) | [v1.8.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) | `51ce1253c5d7…` |
 | **1.7.0** | 20/10/2026 | [Notchbar-1.7.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.7.0.dmg) | [v1.7.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.7.0.md) | `5194af730925…` |
 | **1.6.0** | 17/10/2026 | [Notchbar-1.6.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.6.0.dmg) | [v1.6.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.6.0.md) | `d48fc1e5e97e…` |
