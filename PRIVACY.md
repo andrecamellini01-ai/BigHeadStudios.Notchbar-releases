@@ -7,7 +7,7 @@ O Notchbar é um app que roda no seu Mac. Ele foi feito para **não ter conta, n
 ## Resumo
 - Não há conta do Notchbar, telemetria, analytics nem anúncios.
 - O conteúdo que o app mostra (música, letras, calendário, bateria, Bluetooth, Foco, agentes do Claude Code, área de transferência, capturas, downloads) é lido no seu Mac e fica no seu Mac.
-- As únicas conexões de rede são: a letra da música (LRCLIB), a confirmação da licença, a checagem de atualização, se você conectar, o Google Agenda e, quando você pede “Que música é essa?”, o Shazam. Nenhuma delas recebe conteúdo pessoal além do descrito abaixo.
+- As únicas conexões de rede são: a letra da música (LRCLIB), a confirmação da licença, a checagem de atualização, se você conectar, o Google Agenda, quando você pede “Que música é essa?”, o Shazam e, só quando você compra, o pedido do Pix. Nenhuma delas recebe conteúdo pessoal além do descrito abaixo.
 
 ## O que cada função usa
 
@@ -20,6 +20,7 @@ O Notchbar é um app que roda no seu Mac. Ele foi feito para **não ter conta, n
 | Agenda (calendários do macOS) | título, horário, local, link e notas dos eventos dos calendários que você escolher, para montar o lembrete e a aba Hoje | só em memória, enquanto o app roda | Não |
 | Agenda (Google, opcional) | lista de calendários e os eventos das próximas horas — veja a seção abaixo | eventos só em memória; um token de acesso no Keychain do app | Sim: pedidos de leitura ao Google, em seu nome. Nada vai para a BigHeadStudios |
 | Licença | a sua key, um identificador do Mac (hash, não o número de série), o nome do Mac e a versão do app | Keychain e preferências | Sim: para o servidor de licenças da BigHeadStudios, para confirmar a ativação |
+| Compra por Pix (no app, só quando você compra) | o seu e-mail, o comprovante do Pix que você anexa (foto ou PDF), um identificador do Mac (hash) e a versão do app | no servidor de licenças da BigHeadStudios, para conferir o pagamento e emitir a licença | Sim: para o servidor de licenças. O pagamento acontece no app do seu banco — o Notchbar não vê dados bancários |
 | Atualizações | nenhum dado pessoal | — | Sim: uma consulta diária ao arquivo de versões no GitHub |
 | Agentes do Claude Code (opcional) | os eventos que o Claude Code passa aos hooks: pasta do projeto, ferramenta em uso, o comando/arquivo de um pedido de permissão, o fim da resposta | cada evento é um arquivo temporário em `~/Library/Application Support/Notchbar/agents`, apagado assim que o app lê; o resto só em memória | Não |
 | Limite do Claude (Limitbar) | os números do `current.json` que o Limitbar grava no seu Mac (percentuais, horários de reset, nomes das contas) | só em memória | Não |

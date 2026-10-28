@@ -12,11 +12,11 @@
 
 <p align="center">
   <a href="https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/Notchbar.dmg"><img alt="Baixar para macOS" src="https://img.shields.io/badge/Baixar_para_macOS-Notchbar.dmg-FF5A32?style=for-the-badge&labelColor=17161A"></a>
-  <a href="#preço"><img alt="Licença vitalícia US$ 2,99" src="https://img.shields.io/badge/Licença_vitalícia-US%24_2%2C99-E8A046?style=for-the-badge&labelColor=17161A"></a>
+  <a href="#preço"><img alt="Licença vitalícia R$ 10 por Pix" src="https://img.shields.io/badge/Licen%C3%A7a_vital%C3%ADcia-R%24_10_%C2%B7_Pix-E8A046?style=for-the-badge&labelColor=17161A"></a>
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.0-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.1-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,58 +34,21 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 2.0.0
+## Novidades da 2.0.1
 
-O notch virou o lugar onde o Mac fala com você: o que está acontecendo agora, o próximo gesto e o que está de passagem pelo computador.
+Comprar ficou fácil: a licença agora é paga por Pix, dentro do próprio app.
 
-#### Agentes do Claude Code no notch
-- **Aprove direto no notch.** Quando o Claude Code pede permissão (rodar um comando, editar um arquivo), o notch mostra o pedido com o comando e os botões **Permitir · Negar · Sempre** — e um anel com o prazo. **⌃⌥Y** permite e **⌃⌥X** nega o pedido da frente (os dois atalhos só existem enquanto há um pedido). Sem resposta no prazo (30 s a 5 min, você escolhe), o pedido volta para o terminal como sempre.
-- **Trabalhando:** pílula com o projeto e o ícone respirando; clique e volta para a aba certa do Terminal ou do iTerm (pelo tty), ou para o VS Code, Cursor, Warp, Ghostty — o app que rodou o agente.
-- **Pronto, erro ou esperando você:** o notch expande por 8 s com o fim da resposta e fica compacto até o clique (abre o terminal) ou o ×.
-- **Seção Agentes** na meia roda: todas as sessões com estado, tempo e ferramenta em uso; pedidos pendentes com Permitir/Negar; o uso do dia no rodapé.
-- **Como entra:** Configurações › Agentes › Instalar. O Notchbar instala um script local e acrescenta **só as linhas dele** no `~/.claude/settings.json` (com backup); Desinstalar tira só essas linhas. Nada sai do Mac.
-- Codex, Cursor e scripts entram por `notchbar://agent?event=start|done|error|waiting&name=…&project=…`.
+#### Novidades
+- **Licença vitalícia por R$ 10, paga por Pix no app.** Em Licença › Comprar (ou no Comprar do notch quando o teste acaba): seu e-mail, o QR do Pix, “Já paguei” com o comprovante. Assim que conferirmos, a licença ativa sozinha neste Mac — sem colar key. Vale para sempre, em 2 Macs.
+- **O mesmo sistema de licenças do Limitbar.** As keys novas começam com **NB2**; as **NB1** de quem já comprou continuam valendo, sem fazer nada.
 
-#### Limite do Claude (com o Limitbar)
-- Com o Limitbar gravando o `current.json`, o notch mostra o limite quando importa: acima do seu limiar de aviso, uma pílula com o %; em 100%, a contagem até liberar; ao liberar, **“Sessão liberada”**. Clique abre o Limitbar.
-- Agente trabalhando com o limite crítico: o aviso do agente ganha o %. A seção Hoje mostra os limites no rodapé.
-
-#### Prateleira 2.0 e o que passa pelo Mac
-- **Capturas de tela** caem sozinhas na Prateleira, com a miniatura no notch por 6 s — arraste dela direto para o Slack, o Figma ou o e-mail. Opcional: tirar as capturas da Mesa.
-- **Downloads:** anel de progresso enquanto baixa (Safari com o total; Chrome e outros com o tamanho) e “Download pronto” com Abrir/Mostrar.
-- **Copiados:** histórico da área de transferência (Prateleira › Copiados), com a confirmação do que foi copiado no notch. Só em memória, ignora senhas e gerenciadores de senha. Desligado por padrão.
-- **Fixar**, **Renomear…** e **Enviar para** (Mail, Mensagens, Notas…) no botão direito; vários arquivos soltos juntos viram um bloco só, arrastado inteiro; textos, links e imagens soltos no notch viram arquivos (.txt, .webloc, .png).
-
-#### Tempo
-- **Seção Tempo:** timer (5 · 15 · 25 · 45 min, ou role para escolher), cronômetro e **Pomodoro** (foco, pausa, pausa longa a cada 4). Rodando, uma pílula com o anel esvaziando; no fim, “Tempo!” com +1/+5 min. **⌃⌥T** e **⌃⌥P**.
-- No foco, os avisos não críticos esperam a pausa; opcional: rodar um atalho do app Atalhos ao começar/terminar (p.ex. ligar o modo Foco). Reunião no meio do foco? O notch avisa antes e oferece “focar até a reunião”.
-- **Câmera e microfone em uso** com o nome do app (“Zoom”), e o aviso **“Microfone ainda ligado”** 30 s depois de a reunião acabar.
-- **Próximas 3:** passe o mouse no notch sem música e veja as próximas reuniões do dia numa linha.
-
-#### Som
-- **Saída de áudio** na bandeja (AirPods, monitor, alto-falantes, AirPlay) — na seção Som e ao lado da fonte da mídia.
-- **AirPods com três anéis:** esquerdo, direito e estojo.
-- **Que música é essa?** (Shazam, macOS 14+).
-- **Letra:** karaokê (a linha atual acende palavra por palavra) e tradução embaixo de cada linha (macOS 15+, no próprio Mac).
-- **Equalizador do sistema** de dez bandas com presets (beta, macOS 14.2+) e, opcional, **barras do notch seguindo o som de verdade**.
-
-#### Design e acessibilidade
-- **Avisos novos** na mesma família do HUD: expandido com botões, compacto colado na câmera — com música, a capa à esquerda e o aviso à direita.
-- **Aurora com contexto:** sem música, as luzes vêm do papel de parede; com um agente trabalhando, coral; numa reunião, o azul da Agenda.
-- **Aumentar contraste** ganha aros sólidos; **Reduzir transparência** desliga a Aurora e deixa o vidro sólido; VoiceOver lê cada aviso.
-- **Boas-vindas no próprio notch:** três cartões que andam quando você faz o gesto (espiar, rolar a roda, soltar um arquivo).
-
-#### Configurações novas
-- Janela com barra lateral e **prévia viva do notch** no topo de cada página, que acompanha o que você muda; páginas novas: Som, Agentes, Tempo, Prateleira, Limite do Claude, Acessibilidade e **Permissões** (o estado de cada uma e o botão certo).
-
-#### notchbar://
-- `open?section=` · `toggle` · `notify?title=&detail=&symbol=&color=` · `timer?minutes=` · `pomodoro` · `stopwatch` · `shelf/add?path=` · `settings?page=` · `shazam` · `agent?event=` — para Atalhos, Raycast, Alfred e scripts.
+#### Correções
+- Build sem o aviso de API obsoleta no “Enviar para” da Prateleira.
 
 #### Notas
-- Tudo novo começa desligado quando pede permissão (Agentes, Copiados, capturas, downloads, equalizador, Shazam): cada permissão é pedida só quando você liga o módulo.
-- Licença vitalícia: quem tem a 1.x ganha a 2.0.
+- Na compra, o seu e-mail e o comprovante do Pix vão para o servidor de licenças da BigHeadStudios, só para conferir o pagamento e emitir a licença. O pagamento acontece no app do seu banco. Detalhes na política de privacidade.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.0.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.1.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -261,17 +224,16 @@ O Notchbar é distribuído fora da App Store. O macOS pede que você aprove uma 
 
 | | Teste | Vitalícia |
 |---|:---:|:---:|
-| **Preço** | grátis | **US$ 2,99** — pagamento único |
+| **Preço** | grátis | **R$ 10** — pagamento único, por Pix |
 | **Duração** | 48 horas | para sempre |
 | **Todos os recursos** | ✓ | ✓ |
 | **Atualizações (inclui a 2.0)** | — | ✓ |
 | **Macs** | 1 | até 2 |
 | **Funciona offline** | ✓ | ✓ (confirma online na ativação) |
 
-<!-- TROQUE o link abaixo pelo seu checkout (Stripe Payment Link, Lemon Squeezy, Gumroad…) -->
-**[Comprar licença vitalícia →](COLE_AQUI_O_LINK_DO_CHECKOUT)**
+**A compra é dentro do app, por Pix** (Notchbar 2.0.1+): baixe, abra Configurações › Licença › **Comprar — R$ 10**, informe seu e-mail, pague o QR no app do seu banco e anexe o comprovante. Assim que conferirmos (normalmente em poucas horas), a licença **ativa sozinha** — não precisa colar nada. Para o segundo Mac, a mesma key fica em Licença.
 
-A key chega no e-mail da compra. No Notchbar: abra a bandeja › ícone de ampulheta › cole › **Ativar** (precisa de internet nessa hora).
+Já tem uma key (NB1 ou NB2)? Licença › cole › **Ativar** (precisa de internet nessa hora).
 
 ## Privacidade
 
@@ -299,7 +261,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **2.0.0** **(atual)** | 28/10/2026 | [Notchbar-2.0.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.0.dmg) | [v2.0.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.0.md) | `7c43049d0150…` |
+| **2.0.1** **(atual)** | 28/10/2026 | [Notchbar-2.0.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.1.dmg) | [v2.0.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.1.md) | `c705c89b99fd…` |
+| **2.0.0** | 28/10/2026 | [Notchbar-2.0.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.0.dmg) | [v2.0.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.0.md) | `7c43049d0150…` |
 | **1.9.0** | 27/10/2026 | [Notchbar-1.9.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.9.0.dmg) | [v1.9.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) | `3ed52de00023…` |
 | **1.8.1** | 20/10/2026 | [Notchbar-1.8.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.1.dmg) | [v1.8.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) | `6a17a2c33df6…` |
 | **1.8.0** | 20/10/2026 | [Notchbar-1.8.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.0.dmg) | [v1.8.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) | `51ce1253c5d7…` |
@@ -332,7 +295,7 @@ Sim, de propósito: em tela cheia o Notchbar sai do caminho.
 <details>
 <summary><b>O que acontece depois das 48 horas?</b></summary>
 <br>
-A bandeja passa a mostrar só “Ativar licença” e “Comprar”. Cole a key e tudo volta na hora.
+A bandeja passa a mostrar só “Ativar licença” e “Comprar”. Comprar abre o Pix dentro do app; com a licença ativa (ou colando uma key), tudo volta na hora.
 </details>
 
 <details>
