@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/states.png" width="880" alt="Notchbar: fechado tocando, mouse em cima e bandeja aberta">
+  <img src="assets/notchbar-2.0.gif" width="880" alt="Notchbar 2.0 em 18 segundos: a bandeja da música abrindo, a reunião com o botão Entrar, o Claude Code pedindo permissão (Permitir) e o timer ao lado da câmera">
 </p>
 
 ---
