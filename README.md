@@ -6,8 +6,8 @@
 
 <p align="center">
   <b>Seu notch, vivo.</b><br>
-  A música do Mac a um passar de mouse, o HUD do Mac no lugar do quadrado cinza — e a próxima reunião, com botão Entrar.<br>
-  Spotify, Música, YouTube no navegador, qualquer app · letra sincronizada · Google Meet, Zoom e Teams na hora · volume, brilho, bateria, AirPods e Foco.
+  A música do Mac a um passar de mouse, o HUD do Mac no lugar do quadrado cinza, a próxima reunião com botão Entrar — e, na 2.0, o <b>Claude Code pedindo permissão</b>: você aprova ali mesmo.<br>
+  Spotify, Música, YouTube no navegador · letra com karaokê e tradução · Meet, Zoom e Teams na hora · timer e Pomodoro · limite do Claude · capturas e downloads · AirPods com três anéis.
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.9.0-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.0-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,45 +34,90 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 1.9.0
+## Novidades da 2.0.0
 
-O notch ficou físico, vivo e de vidro.
+O notch virou o lugar onde o Mac fala com você: o que está acontecendo agora, o próximo gesto e o que está de passagem pelo computador.
 
-#### Aurora
-- **Fundo vivo com as cores da capa.** A bandeja aberta tira três cores da capa e as transforma em luzes grandes e suaves que derivam devagar por baixo do player — como a tela de letras do Apple Music. A faixa da câmera continua preta (o notch físico some nela); com a música pausada, a luz para; trocou de faixa, as luzes novas entram num crossfade. Liga e desliga em Configurações › Mídia › Visual.
-- **A capa respira com a música.** Tocando, a capa fica grande, com sombra funda; pausada, ela recua — o mesmo gesto do Apple Music.
+#### Agentes do Claude Code no notch
+- **Aprove direto no notch.** Quando o Claude Code pede permissão (rodar um comando, editar um arquivo), o notch mostra o pedido com o comando e os botões **Permitir · Negar · Sempre** — e um anel com o prazo. **⌃⌥Y** permite e **⌃⌥X** nega o pedido da frente (os dois atalhos só existem enquanto há um pedido). Sem resposta no prazo (30 s a 5 min, você escolhe), o pedido volta para o terminal como sempre.
+- **Trabalhando:** pílula com o projeto e o ícone respirando; clique e volta para a aba certa do Terminal ou do iTerm (pelo tty), ou para o VS Code, Cursor, Warp, Ghostty — o app que rodou o agente.
+- **Pronto, erro ou esperando você:** o notch expande por 8 s com o fim da resposta e fica compacto até o clique (abre o terminal) ou o ×.
+- **Seção Agentes** na meia roda: todas as sessões com estado, tempo e ferramenta em uso; pedidos pendentes com Permitir/Negar; o uso do dia no rodapé.
+- **Como entra:** Configurações › Agentes › Instalar. O Notchbar instala um script local e acrescenta **só as linhas dele** no `~/.claude/settings.json` (com backup); Desinstalar tira só essas linhas. Nada sai do Mac.
+- Codex, Cursor e scripts entram por `notchbar://agent?event=start|done|error|waiting&name=…&project=…`.
 
-#### Movimento e forma
-- **A forma é física.** A bandeja abre com uma mola que passa um nadinha do ponto e assenta, fecha firme e sem quique; a espiadinha dá um pulinho. HUD, avisos e Agenda seguem a coreografia de sempre.
-- **O conteúdo materializa.** Ao abrir, ícones e corpo saem de um desfoque, crescendo de 95,5% para 100%, escalonados (faixa de cima, depois o corpo); ao fechar, somem antes de a forma recolher.
-- **Cantos contínuos.** O notch, a espiadinha e a bandeja ganharam cantos de curvatura contínua (o “squircle” do hardware da Apple) no lugar do arco simples.
+#### Limite do Claude (com o Limitbar)
+- Com o Limitbar gravando o `current.json`, o notch mostra o limite quando importa: acima do seu limiar de aviso, uma pílula com o %; em 100%, a contagem até liberar; ao liberar, **“Sessão liberada”**. Clique abre o Limitbar.
+- Agente trabalhando com o limite crítico: o aviso do agente ganha o %. A seção Hoje mostra os limites no rodapé.
 
-#### Vidro
-- **Controles de vidro.** Botões ganham um disco de vidro e “levantam” ao passar o mouse; a pílula Reprodução · Letra · Fila virou um segmentado de vidro com o polegar deslizando até a aba; botões secundários, linhas do Hoje e a Prateleira usam o mesmo vidro (brilho de cima, aro que pega luz). A barra de progresso engrossa com o mouse em cima.
-- Horários em SF Rounded com dígitos de largura fixa.
+#### Prateleira 2.0 e o que passa pelo Mac
+- **Capturas de tela** caem sozinhas na Prateleira, com a miniatura no notch por 6 s — arraste dela direto para o Slack, o Figma ou o e-mail. Opcional: tirar as capturas da Mesa.
+- **Downloads:** anel de progresso enquanto baixa (Safari com o total; Chrome e outros com o tamanho) e “Download pronto” com Abrir/Mostrar.
+- **Copiados:** histórico da área de transferência (Prateleira › Copiados), com a confirmação do que foi copiado no notch. Só em memória, ignora senhas e gerenciadores de senha. Desligado por padrão.
+- **Fixar**, **Renomear…** e **Enviar para** (Mail, Mensagens, Notas…) no botão direito; vários arquivos soltos juntos viram um bloco só, arrastado inteiro; textos, links e imagens soltos no notch viram arquivos (.txt, .webloc, .png).
 
-#### Letras como no Apple Music
-- Todas as linhas em negrito no mesmo corpo: a atual nítida e branca, as outras recuam com desfoque e transparência pela distância; a rolagem segue com mola.
-- **Pausas instrumentais** viram três pontos que enchem um a um no tempo da pausa, respirando — e somem pouco antes da próxima linha. Uma introdução longa também ganha os pontos.
+#### Tempo
+- **Seção Tempo:** timer (5 · 15 · 25 · 45 min, ou role para escolher), cronômetro e **Pomodoro** (foco, pausa, pausa longa a cada 4). Rodando, uma pílula com o anel esvaziando; no fim, “Tempo!” com +1/+5 min. **⌃⌥T** e **⌃⌥P**.
+- No foco, os avisos não críticos esperam a pausa; opcional: rodar um atalho do app Atalhos ao começar/terminar (p.ex. ligar o modo Foco). Reunião no meio do foco? O notch avisa antes e oferece “focar até a reunião”.
+- **Câmera e microfone em uso** com o nome do app (“Zoom”), e o aviso **“Microfone ainda ligado”** 30 s depois de a reunião acabar.
+- **Próximas 3:** passe o mouse no notch sem música e veja as próximas reuniões do dia numa linha.
 
-#### Prateleira
-- **Arraste arquivos até o notch.** Quando um arquivo chega perto, o notch “inspira”: cresce, mostra “Solte para guardar” e acende um aro colorido girando por dentro da borda. Em cima dele, a bandeja abre direto na nova seção **Prateleira** da meia roda.
-- Os arquivos ficam em blocos de vidro (com miniatura, nas imagens): arraste de volta para qualquer app — vai o arquivo original —, duplo clique abre, × tira; ao lado, **AirDrop**, **Mostrar no Finder** e **Limpar**. A Prateleira guarda só onde os arquivos estão (até 24) e esquece os que sumirem.
-- Liga e desliga em Configurações › Geral › Notch.
+#### Som
+- **Saída de áudio** na bandeja (AirPods, monitor, alto-falantes, AirPlay) — na seção Som e ao lado da fonte da mídia.
+- **AirPods com três anéis:** esquerdo, direito e estojo.
+- **Que música é essa?** (Shazam, macOS 14+).
+- **Letra:** karaokê (a linha atual acende palavra por palavra) e tradução embaixo de cada linha (macOS 15+, no próprio Mac).
+- **Equalizador do sistema** de dez bandas com presets (beta, macOS 14.2+) e, opcional, **barras do notch seguindo o som de verdade**.
 
-#### Correções
-- Rolar a lista do Hoje, a letra, a fila ou a Prateleira não mexe mais no volume nem na posição da música.
+#### Design e acessibilidade
+- **Avisos novos** na mesma família do HUD: expandido com botões, compacto colado na câmera — com música, a capa à esquerda e o aviso à direita.
+- **Aurora com contexto:** sem música, as luzes vêm do papel de parede; com um agente trabalhando, coral; numa reunião, o azul da Agenda.
+- **Aumentar contraste** ganha aros sólidos; **Reduzir transparência** desliga a Aurora e deixa o vidro sólido; VoiceOver lê cada aviso.
+- **Boas-vindas no próprio notch:** três cartões que andam quando você faz o gesto (espiar, rolar a roda, soltar um arquivo).
+
+#### Configurações novas
+- Janela com barra lateral e **prévia viva do notch** no topo de cada página, que acompanha o que você muda; páginas novas: Som, Agentes, Tempo, Prateleira, Limite do Claude, Acessibilidade e **Permissões** (o estado de cada uma e o botão certo).
+
+#### notchbar://
+- `open?section=` · `toggle` · `notify?title=&detail=&symbol=&color=` · `timer?minutes=` · `pomodoro` · `stopwatch` · `shelf/add?path=` · `settings?page=` · `shazam` · `agent?event=` — para Atalhos, Raycast, Alfred e scripts.
 
 #### Notas
-- Sem permissão nova: a Prateleira lê só o que você solta nela.
-- Licença vitalícia cobre toda a série 1.x.
+- Tudo novo começa desligado quando pede permissão (Agentes, Copiados, capturas, downloads, equalizador, Shazam): cada permissão é pedida só quando você liga o módulo.
+- Licença vitalícia: quem tem a 1.x ganha a 2.0.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.0.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
 
 O Notchbar mora no notch do MacBook e não ocupa nada da tela. **Passe o mouse** e ele reage com uma expandidinha. **Clique** e uma bandeja desliza por trás do notch com a capa, o nome da música, o artista, a barra de progresso e os controles — tingida com a cor da capa.
+
+## Novo na 2.0: o Claude Code pede, você aprova no notch
+
+Deixou o agente trabalhando e foi fazer outra coisa? Quando o **Claude Code** pede permissão para rodar um comando ou editar um arquivo, o notch mostra o pedido — com o comando — e os botões **Permitir · Negar · Sempre**. **⌃⌥Y** permite e **⌃⌥X** nega sem tirar a mão do teclado. Sem resposta no prazo, o pedido volta para o terminal como sempre.
+
+<p align="center">
+  <img src="assets/agents.png" width="880" alt="O Claude Code pede permissão no notch com Permitir, Negar e Sempre; trabalhando ao lado da música; pronto com o fim da resposta">
+</p>
+
+- **Trabalhando:** uma pílula com o projeto ao lado da câmera (com música, a capa fica à esquerda). Clique e volta para a aba certa do Terminal ou do iTerm — ou para o VS Code, o Cursor, o Warp, o Ghostty.
+- **Pronto, erro ou esperando você:** o notch abre com o fim da resposta e fica compacto até você olhar.
+- **Seção Agentes** na meia roda: todas as sessões, o que cada uma está fazendo e os pedidos pendentes.
+- **Como liga:** Configurações › Agentes › **Instalar**. O Notchbar acrescenta só as linhas dele no `~/.claude/settings.json` (com backup) e tira só elas ao desinstalar. Nada sai do Mac.
+
+## Tempo, limites, AirPods e capturas
+
+<p align="center">
+  <img src="assets/v2-cards.png" width="880" alt="Pomodoro correndo com o anel ao lado da câmera; limite do Claude em 82% pelo Limitbar; AirPods com três anéis; captura de tela com a miniatura para arrastar">
+</p>
+
+- **Tempo:** timer (role para escolher os minutos), cronômetro e **Pomodoro** — no foco, os avisos que não importam esperam a pausa; se uma reunião cai no meio, o notch avisa antes. **⌃⌥T** e **⌃⌥P**.
+- **Câmera e microfone em uso**, com o nome do app — e “**Microfone ainda ligado**” se a reunião acabou e o Zoom continuou ouvindo.
+- **Limite do Claude:** com o [Limitbar](https://github.com/andrecamellini01-ai/BigHeadStudios.Limitbar-releases), o notch mostra quando o limite aperta, conta até liberar e avisa “Sessão liberada”.
+- **Capturas e downloads** caem sozinhos na **Prateleira** (a captura aparece no notch para você arrastar direto para o Slack ou o e-mail); downloads com anel de progresso.
+- **Copiados:** o que você copiou, para copiar de novo — só na memória, ignorando senhas.
+- **Som:** troque a saída (AirPods, monitor, caixa) na bandeja; **Que música é essa?** (Shazam); letra com **karaokê** e **tradução**; **equalizador** do sistema (beta).
+- **Próximas 3:** passe o mouse no notch e veja as próximas reuniões do dia numa linha.
 
 ## A bandeja: uma meia roda de seções
 
@@ -82,7 +127,11 @@ Na borda esquerda da bandeja mora uma **meia roda**. Recolhida, é só uma colun
 |---|---|
 | **Em branco** | nada: a bandeja mais baixa, só com os ícones de configuração |
 | **Música** | o player — e, no canto superior esquerdo, a pílula **Reprodução · Letra · Fila** |
+| **Som** | saídas de áudio, equalizador e “Que música é essa?” |
 | **Hoje** | a agenda do dia, com a próxima reunião em destaque (aparece com a Agenda ligada) |
+| **Tempo** | timer, cronômetro e Pomodoro; câmera e microfone em uso |
+| **Agentes** | as sessões do Claude Code e os pedidos pendentes (aparece com Agentes ligado) |
+| **Prateleira** | arquivos guardados — e **Copiados**, o histórico da área de transferência |
 
 A roda tem sempre o mesmo tamanho e o mesmo lugar, em qualquer Mac: trocar de seção cresce ou encolhe a bandeja para baixo, sem mexer nela.
 
@@ -135,7 +184,9 @@ Volume do app, fila, curtir, aleatório/repetir e fonte fixa usam a permissão d
 |---|---|
 | Scroll **horizontal** sobre o notch | avança / volta 5 s |
 | Scroll **vertical** sobre o notch | volume do Mac |
-| Scroll sobre a **meia roda** (mouse em cima dela) | gira entre Em branco · Música · Hoje |
+| Scroll sobre a **meia roda** (mouse em cima dela) | gira entre as seções |
+| Scroll na seção **Tempo** (parado) | escolhe os minutos do timer |
+| Arrastar arquivo, texto ou link até o notch | guarda na Prateleira |
 | **Duplo clique** na capa | próxima faixa |
 | Duplo clique no notch fechado (opcional) | próxima faixa |
 
@@ -149,6 +200,10 @@ Volume do app, fila, curtir, aleatório/repetir e fonte fixa usam a permissão d
 | ⌃⌥N | abre / fecha a bandeja |
 | ⌃⌥J | entra na próxima reunião (ou abre Hoje) |
 | ⌃⌥K | limpeza do teclado (trava as teclas por um tempo) |
+| ⌃⌥T · ⌃⌥P | timer (começa/pausa) · Pomodoro |
+| ⌃⌥Y · ⌃⌥X | permite · nega o pedido do agente (só existem enquanto há um pedido) |
+
+**Para Atalhos, Raycast e scripts:** `open "notchbar://timer?minutes=25"`, `notchbar://notify?title=Deploy%20ok&color=green`, `notchbar://open?section=agents`, `notchbar://agent?event=done&name=Codex` e mais.
 
 ## A próxima reunião, no notch
 
@@ -183,7 +238,7 @@ Tudo liga e desliga em Configurações › **Sistema**. No HUD, play/pause e a l
 
 ## Nada atrás do notch
 
-Nenhum botão, texto ou capa fica escondido atrás da câmera: tudo vive dos lados e abaixo do notch. As configurações ficam no canto superior esquerdo da bandeja aberta — abas **Geral**, **Mídia**, **Sistema**, **Agenda**, **Licença** e **Sobre**.
+Nenhum botão, texto ou capa fica escondido atrás da câmera: tudo vive dos lados e abaixo do notch. As configurações ficam no canto superior esquerdo da bandeja aberta — uma janela com barra lateral e uma **prévia do notch** no topo de cada página, que acompanha o que você muda. A página **Permissões** mostra o estado de cada uma e o botão certo; **Acessibilidade** segue os Ajustes do macOS (reduzir movimento, aumentar contraste, reduzir transparência, VoiceOver).
 
 Em monitor externo ou num Mac sem notch, aparece um notch virtual — completo ou **minimizado** (só um sinalzinho que cresce ao passar o mouse); dá para desligar.
 
@@ -209,7 +264,7 @@ O Notchbar é distribuído fora da App Store. O macOS pede que você aprove uma 
 | **Preço** | grátis | **US$ 2,99** — pagamento único |
 | **Duração** | 48 horas | para sempre |
 | **Todos os recursos** | ✓ | ✓ |
-| **Atualizações 1.x** | — | ✓ |
+| **Atualizações (inclui a 2.0)** | — | ✓ |
 | **Macs** | 1 | até 2 |
 | **Funciona offline** | ✓ | ✓ (confirma online na ativação) |
 
@@ -230,6 +285,10 @@ A key chega no e-mail da compra. No Notchbar: abra a bandeja › ícone de ampul
 | **Bluetooth** (o macOS pode perguntar) | aviso de fones/acessórios conectados e a bateria deles | sem o aviso de Bluetooth |
 | **Calendários** (acesso total — o único que o macOS 14+ oferece para ler eventos) | lembrete da próxima reunião, Entrar e a seção Hoje; **só leitura** | sem a Agenda (ou só com o Google direto) |
 | **Google** (login na página do Google, opcional) | ler os seus calendários do Google sem passar pelo macOS; **só leitura**, token no Keychain, Desconectar revoga | os calendários do Mac continuam |
+| **Microfone** | só no “Que música é essa?” (Shazam), quando você pede | sem o Shazam |
+| **Gravação de áudio** (macOS 14.2+) | só no equalizador e nas barras que seguem o som — nada é gravado | sem equalizador |
+| **Pastas** (Mesa, Downloads) | capturas e downloads entrando sozinhos na Prateleira | a Prateleira continua por arrastar |
+| **Claude Code** (sem permissão do macOS) | Configurações › Agentes › Instalar: um script local e as linhas do Notchbar no `~/.claude/settings.json` | sem os agentes no notch |
 
 - Nada de conta nem analytics. Rede: a checagem diária de atualização (um arquivo estático neste repositório), a confirmação da licença (só a key, um código do Mac — um hash —, o nome do Mac e a versão do app), com as letras ligadas a busca no LRCLIB (artista, título, álbum e duração) e, se você conectar o Google, as leituras do Google Agenda em seu nome — nada disso passa pela BigHeadStudios. Política completa: [privacidade](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/PRIVACY.md).
 
@@ -240,7 +299,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **1.9.0** **(atual)** | 27/10/2026 | [Notchbar-1.9.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.9.0.dmg) | [v1.9.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) | `3ed52de00023…` |
+| **2.0.0** **(atual)** | 28/10/2026 | [Notchbar-2.0.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.0.dmg) | [v2.0.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.0.md) | `7c43049d0150…` |
+| **1.9.0** | 27/10/2026 | [Notchbar-1.9.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.9.0.dmg) | [v1.9.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) | `3ed52de00023…` |
 | **1.8.1** | 20/10/2026 | [Notchbar-1.8.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.1.dmg) | [v1.8.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) | `6a17a2c33df6…` |
 | **1.8.0** | 20/10/2026 | [Notchbar-1.8.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.0.dmg) | [v1.8.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.0.md) | `51ce1253c5d7…` |
 | **1.7.0** | 20/10/2026 | [Notchbar-1.7.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.7.0.dmg) | [v1.7.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.7.0.md) | `5194af730925…` |
@@ -312,6 +372,24 @@ Não. Ele só lê: nunca cria, altera, remove nem responde convites. Os eventos 
 </details>
 
 <details>
+<summary><b>O que os Agentes mudam no meu Claude Code?</b></summary>
+<br>
+Só acrescentam “hooks” no <code>~/.claude/settings.json</code> (com backup ao lado) que avisam o Notchbar pelo próprio Mac — nenhum servidor. O comando só aparece no notch quando o Claude pede permissão; nada é gravado. Se o Notchbar estiver fechado, o script sai na hora e o Claude Code segue igual. Desinstalar tira só essas linhas.
+</details>
+
+<details>
+<summary><b>O histórico de Copiados guarda minhas senhas?</b></summary>
+<br>
+Não. Vem desligado; ligado, fica só na memória (some ao sair do app) e ignora o que o macOS e os gerenciadores de senha marcam como senha — e tudo o que é copiado dentro deles.
+</details>
+
+<details>
+<summary><b>Preciso do Limitbar?</b></summary>
+<br>
+Só para ver o limite do Claude no notch. O Notchbar lê o arquivo que o Limitbar grava no seu Mac (Limitbar › Integrações › “Gravar current.json”).
+</details>
+
+<details>
 <summary><b>Em quantos Macs posso usar?</b></summary>
 <br>
 Em até **2 Macs** seus ao mesmo tempo. Trocou de Mac? No antigo: Licença › Remover licença deste Mac — a vaga fica livre para o novo.
@@ -319,6 +397,6 @@ Em até **2 Macs** seus ao mesmo tempo. Trocou de Mac? No antigo: Licença › R
 
 ---
 
-<p align="center"><sub>Também da BigHeadStudios: <a href="https://github.com/andrecamellini01-ai/BigHeadStudios.Limitbar-releases"><b>Limitbar</b></a> — seus limites do Claude na barra de menu.</sub></p>
+<p align="center"><sub>Também da BigHeadStudios: <a href="https://github.com/andrecamellini01-ai/BigHeadStudios.Limitbar-releases"><b>Limitbar</b></a> — seus limites do Claude na barra de menu (e, com o Notchbar 2.0, no notch).</sub></p>
 
 <sub>© 2026 BigHeadStudios. Notchbar é independente, sem afiliação com a Apple ou com os apps que controla. Leitura de mídia via <a href="https://github.com/ungive/mediaremote-adapter">mediaremote-adapter</a> (BSD-3-Clause).</sub>
