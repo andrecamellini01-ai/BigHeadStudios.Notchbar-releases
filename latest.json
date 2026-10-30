@@ -1,7 +1,7 @@
 {
-  "version": "2.0.1",
-  "build": 17,
-  "url": "https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.1.dmg",
-  "sha256": "c705c89b99fd1d8605f8b9cece025b801d67d17e9c807a07e38e49680c7ed2f8",
-  "notes": "https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.1.md"
+  "version": "2.0.2",
+  "build": 18,
+  "url": "https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.2.dmg",
+  "sha256": "11fbd3368d4961f16c327933191378424787875886a10034a61ea3c7c68d10f4",
+  "notes": "https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.2.md"
 }

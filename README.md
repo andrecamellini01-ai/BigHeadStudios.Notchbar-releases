@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.1-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.2-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,21 +34,20 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 2.0.1
+## Novidades da 2.0.2
 
-Comprar ficou fácil: a licença agora é paga por Pix, dentro do próprio app.
+Menos avisos, e a bandeja abre onde você deixou.
 
-#### Novidades
-- **Licença vitalícia por R$ 10, paga por Pix no app.** Em Licença › Comprar (ou no Comprar do notch quando o teste acaba): seu e-mail, o QR do Pix, “Já paguei” com o comprovante. Assim que conferirmos, a licença ativa sozinha neste Mac — sem colar key. Vale para sempre, em 2 Macs.
-- **O mesmo sistema de licenças do Limitbar.** As keys novas começam com **NB2**; as **NB1** de quem já comprou continuam valendo, sem fazer nada.
-
-#### Correções
-- Build sem o aviso de API obsoleta no “Enviar para” da Prateleira.
+#### Ajustes
+- **A bandeja lembra a seção que você escolheu.** Clicar num aviso, soltar um arquivo, um atalho ou um link `notchbar://` mostram a seção deles só até a bandeja fechar — na próxima vez, ela abre de novo na que você escolheu na meia roda (antes, a câmera ligada fazia a bandeja abrir sempre em Tempo).
+- **Câmera e microfone sem pílula eterna.** Ao ligarem, uma pílula discreta com o nome do app por alguns segundos, e pronto — o macOS já mostra o ponto verde/laranja na barra de menus. Quem quiser a pílula durante a chamada toda liga “Manter a pílula enquanto estiverem em uso” em Configurações › Tempo. Clicar nela abre a bandeja normalmente.
+- **Limite do Claude mais discreto.** A pílula aparece quando o uso cruza o seu limiar de aviso ou o crítico e sai sozinha depois de alguns segundos; só em 100% a contagem até liberar fica no notch.
+- **“Microfone ainda ligado”** avisa sem prender a tela: aparece por 10 s e fica como pílula vermelha por um minuto.
 
 #### Notas
-- Na compra, o seu e-mail e o comprovante do Pix vão para o servidor de licenças da BigHeadStudios, só para conferir o pagamento e emitir a licença. O pagamento acontece no app do seu banco. Detalhes na política de privacidade.
+- Nada muda na licença nem nas permissões.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.1.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.2.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -261,7 +260,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **2.0.1** **(atual)** | 28/10/2026 | [Notchbar-2.0.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.1.dmg) | [v2.0.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.1.md) | `c705c89b99fd…` |
+| **2.0.2** **(atual)** | 30/10/2026 | [Notchbar-2.0.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.2.dmg) | [v2.0.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.2.md) | `11fbd3368d49…` |
+| **2.0.1** | 28/10/2026 | [Notchbar-2.0.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.1.dmg) | [v2.0.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.1.md) | `c705c89b99fd…` |
 | **2.0.0** | 28/10/2026 | [Notchbar-2.0.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.0.dmg) | [v2.0.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.0.md) | `7c43049d0150…` |
 | **1.9.0** | 27/10/2026 | [Notchbar-1.9.0.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.9.0.dmg) | [v1.9.0](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.9.0.md) | `3ed52de00023…` |
 | **1.8.1** | 20/10/2026 | [Notchbar-1.8.1.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-1.8.1.dmg) | [v1.8.1](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v1.8.1.md) | `6a17a2c33df6…` |
