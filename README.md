@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.5-17161A?style=flat-square">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-2.0.6-17161A?style=flat-square">
   <img alt="macOS 13 ou mais novo" src="https://img.shields.io/badge/macOS-13%2B-17161A?style=flat-square">
   <img alt="Apple Silicon e Intel" src="https://img.shields.io/badge/Apple_Silicon_%2B_Intel-universal-17161A?style=flat-square">
   <img alt="Teste grátis de 48 horas" src="https://img.shields.io/badge/teste-48h_grátis-17161A?style=flat-square">
@@ -34,17 +34,17 @@
 ---
 
 <!-- NEWS:START -->
-## Novidades da 2.0.5
+## Novidades da 2.0.6
 
-Novo contato de suporte.
+Brilho no notch em qualquer teclado.
 
-#### Ajustes
-- **Suporte agora em andre@bigheadstudios.com.br** — em Licença, em Sobre e nas mensagens do app. Dúvidas, key perdida ou troca de Mac: é só escrever.
+#### Correções
+- **As teclas de brilho voltaram a mostrar a barra no notch** nos MacBooks com Apple Silicon e no Magic Keyboard atual. Nesses teclados, o brilho chega como uma tecla comum, e o Notchbar só reconhecia o formato dos teclados antigos; por isso aparecia o aviso cinza do macOS no lugar da barra. Passos finos com ⌥⇧ continuam valendo.
 
 #### Notas
-- Nada muda nas licenças nem nas permissões.
+- Nada muda na licença nem nas permissões.
 
-<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.5.md) · [Todas as versões](#todas-as-versões)</sub>
+<sub>[Notas completas](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.6.md) · [Todas as versões](#todas-as-versões)</sub>
 <!-- NEWS:END -->
 
 ## Escondido no notch. Vivo quando você precisa.
@@ -257,7 +257,8 @@ Cada versão continua disponível para download, com as suas notas. O app avisa 
 <!-- VERSIONS:START -->
 | Versão | Data | Download | Notas | SHA-256 |
 |---|---|---|---|---|
-| **2.0.5** **(atual)** | 31/10/2026 | [Notchbar-2.0.5.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.5.dmg) | [v2.0.5](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.5.md) | `5f868c38c3dd…` |
+| **2.0.6** **(atual)** | 31/10/2026 | [Notchbar-2.0.6.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.6.dmg) | [v2.0.6](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.6.md) | `be6cc8da1981…` |
+| **2.0.5** | 31/10/2026 | [Notchbar-2.0.5.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.5.dmg) | [v2.0.5](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.5.md) | `5f868c38c3dd…` |
 | **2.0.4** | 31/10/2026 | [Notchbar-2.0.4.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.4.dmg) | [v2.0.4](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.4.md) | `962f5d4735dc…` |
 | **2.0.3** | 30/10/2026 | [Notchbar-2.0.3.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.3.dmg) | [v2.0.3](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.3.md) | `5bf2c42f7cca…` |
 | **2.0.2** | 30/10/2026 | [Notchbar-2.0.2.dmg](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/raw/main/versions/Notchbar-2.0.2.dmg) | [v2.0.2](https://github.com/andrecamellini01-ai/BigHeadStudios.Notchbar-releases/blob/main/release-notes/v2.0.2.md) | `11fbd3368d49…` |
